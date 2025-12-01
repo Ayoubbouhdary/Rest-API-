@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mockapi:
+    image: typicode/json-server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./db.json:/data/db.json
